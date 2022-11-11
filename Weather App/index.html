@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+    <nav class="nav-bar">
+        <div class="icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="logo">
+            <h1>🌤 Weather App</h1>
+        </div>
+
+
+        <div class="btn">
+            <button>App</button>
+        </div>
+    </nav>
+
+    <!-- search bar -->
+
+    <div class="container">
+        <div class="input">
+            <input type="text" placeholder="Search City" id="input">
+            <button class="search-Btn" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="data">
+            <div class="city-Name">
+                <h3 id="name">Tokyo</h3>
+            </div>
+            <div class="weather-Icon">
+                    <div id="weatherIcon">
+                        <!-- <span>⛅</span> -->
+                        <img src="" alt="">
+                    </div>
+                <!-- <i class="fa-solid fa-cloud-showers-heavy"></i> -->
+                <!-- <img src="" alt="" id="weather-icon"> -->
+                <div class="temp">
+                    <h3 id="temprature">19</h3>
+                    <div>
+                        <span>o</span>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <h3 id="weatherMessage">It's Raining</h3>
+                </div>
+
+            </div>
+
+            <div class="weather-Data">
+                <ul>
+                    <li>
+                        Wind in KPH 
+                        <h3 id="minTemp">17</h3>
+                        <!-- <span>o</span> -->
+                    </li>
+                    <li>
+                        Wind in MPH 
+                        <h3 id="maxTemp">20</h3>
+                        <!-- <span>o</span> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
